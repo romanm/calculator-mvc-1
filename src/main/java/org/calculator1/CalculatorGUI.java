@@ -7,6 +7,10 @@ import org.calculator1.core.CalculatorController;
 import org.calculator1.core.CalculatorModel;
 import org.calculator1.core.CalcultorBorderLayout;
 
+/**
+ * @author roman
+ *
+ */
 public class CalculatorGUI {
 	public static void main(String[] args) {
 		JFrame frame = new JFrame();

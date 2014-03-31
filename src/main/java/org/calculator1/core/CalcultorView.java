@@ -13,7 +13,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class CalcultorBorderLayout {
+public class CalcultorView {
 	final static int VGAP=5, HGAP=5;
 	final static String[] OPERATORS={"+","-","*","/"};
 	final private int numberLength=9;
@@ -30,7 +30,7 @@ public class CalcultorBorderLayout {
 	public JTextField getNumberField1() {
 		return numberField1;
 	}
-	public CalcultorBorderLayout(){
+	public CalcultorView(){
 		numberField1 = new JTextField(numberLength);
 		numberField1.setName("numberField1");
 		focusedNumberField=numberField1;
@@ -180,7 +180,7 @@ public class CalcultorBorderLayout {
 		this.controller=controller;
 	}
 	public static void main(String[] args) {
-		CalcultorBorderLayout frame = new CalcultorBorderLayout();
+		CalcultorView frame = new CalcultorView();
 		JFrame jFrame = new JFrame();
 		Container contentPane = jFrame.getContentPane();
 		frame.fullContentPane(contentPane);

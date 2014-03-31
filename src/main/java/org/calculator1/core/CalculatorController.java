@@ -1,10 +1,10 @@
 package org.calculator1.core;
 
 public class CalculatorController {
-	private CalcultorBorderLayout view;
+	private CalcultorView view;
 	private CalculatorModel model;
 
-	public CalculatorController(CalculatorModel model, CalcultorBorderLayout view) {
+	public CalculatorController(CalculatorModel model, CalcultorView view) {
 		this.view=view;
 		this.model=model;
 	}

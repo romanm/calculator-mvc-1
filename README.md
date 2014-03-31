@@ -1,7 +1,7 @@
 MVC calculator.
 =========
 Swing/applet demo.
-Spring-boot, jar.
+Spring-boot, jar, gradle.
 
 apply plugin: 'java'
 apply plugin: 'eclipse'

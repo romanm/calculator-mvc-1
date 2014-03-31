@@ -1,9 +1,33 @@
 package org.calculator1.core;
 
+/**
+ * Controller class.
+ * 
+ * The "controller class" implement an interface that is used as the
+ * declared type where needed, but no interface is provided in this very
+ * simplified demo.
+ * 
+ * @author roman
+ * 
+ */
 public class CalculatorController {
-	private CalcultorView view;
-	private CalculatorModel model;
+	/**
+	 * Model object.
+	 */
+	private final CalculatorModel model;
+	/**
+	 * View object.
+	 */
+	private final CalcultorView view;
 
+	/**
+	 * Constructor; connects {@code this} to the model and view it coordinates.
+	 * 
+	 * @param model
+	 *            model to connect to
+	 * @param view
+	 *            view to connect to
+	 */
 	public CalculatorController(CalculatorModel model, CalcultorView view) {
 		this.view=view;
 		this.model=model;
@@ -26,7 +50,18 @@ public class CalculatorController {
 		model.setOperator(operator);
 	}
 
-	public String calc(String numerString1, String operator, String numerString2) {
+	/**
+	 * 
+	 * Make operation with two numbers.
+	 * 
+	 * @param numerString1
+	 * @param operator
+	 * @param numerString2
+	 * @return 
+	 *      Result arithmetic operation for two number.
+	 * 
+	 */
+	public String calculate(String numerString1, String operator, String numerString2) {
 		int numer1 = Integer.parseInt(numerString1);
 		int numer2 = Integer.parseInt(numerString2);
 		Integer result=null;
@@ -52,6 +87,9 @@ public class CalculatorController {
 		return resultString;
 	}
 
+	/**
+	 * Set model data to view fields.
+	 */
 	public void initView() {
 		view.getNumberField1().setText(model.getNumber1());
 		view.getNumberField2().setText(model.getNumber2());

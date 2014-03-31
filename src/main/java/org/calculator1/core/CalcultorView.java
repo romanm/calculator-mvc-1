@@ -52,7 +52,7 @@ public class CalcultorView {
 			if(operator.length()==0)
 				throw new NullPointerException("operator must not by null");
 			
-			String resultString = controller.calc(numerString1, operator, numerString2);
+			String resultString = controller.calculate(numerString1, operator, numerString2);
 			resultField.setText(resultString);
 			
 		}
